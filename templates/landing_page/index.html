@@ -1,0 +1,338 @@
+{% extends 'base.html' %}
+
+{% block title %}SunSafe{% endblock %}
+
+{% block header %}
+ <!-- ======= Header ======= -->
+ <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+    <a href="{{ url_for('landing_page.index') }}" class="logo d-flex align-items-center">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <img src="{{ url_for('static', filename='img/logo.jpeg') }}" alt="">-->
+        <h1>SunSafe</h1>
+        </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+
+
+{% endblock %}
+
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Protect your family from harmful UV rays</h2>
+          <p data-aos="fade-up" data-aos-delay="100"> SunSafe widget takes away the guesswork when it comes to knowing UV levels. The SunSafe UV widget will show the latest UV levels and sun protection times for your location</p>
+
+          <form action="#" method="post" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" name="postcode" class="form-control" placeholder="Enter your postcode">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Location</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p>UVIndex</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Temperature</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Suggestion</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="{{ url_for('static', filename='img/UVimages.png') }}" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="{{ url_for('static', filename='img/about.png') }}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>About Us</h3>
+            <p>
+              Australia has one of the highest rates of skin cancer in the world. Each year over 2,000 Australians die from skin cancer, and more than two in three Australians will be diagnosed with skin cancer in their lifetime. It is the most common cancer diagnosed in Australia – and it can be almost entirely prevented with good sun protection.
+            </p>
+            <p>
+              Established in 1988, SunSafe is one of the longest running – and most successful – skin cancer prevention programs in the world. We are proud that our work has resulted in melanoma rates declining or stabilising in all age groups under 60 in Victoria. 
+            </p>  
+              Jointly funded by Cancer Council Victoria and the Victorian Government, we are famous for our Slip! Slop! Slap! catch-cry, which has expanded to include Seek (shade) and Slide (on sunglasses). In recognition of our work, Cancer Council Victoria has been designated a World Health Organization (WHO) Collaborative Centre for Ultraviolet Radiation since 2004.
+            <p> 
+              We provide leadership and innovation in skin cancer prevention and early detection using a multi-faceted approach. Through long held partnerships, community programs, mass media campaigns and advocacy, we support Victorians to be SunSafe, reducing skin cancer rates and saving lives.
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>When you go out don’t let cancer in</h5>
+                  <p>The sun’s UV radiation can cause skin cancer including melanoma that can spread to vital organs.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>When the index hits 3, cover up from UV</h5>
+                  <p>It's great being outdoors, enjoying our beautiful country and climate. But being outdoors means we’re exposed to some of the harshest and most dangerous levels of ultraviolet (UV) radiati</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Protect your community</h5>
+                  <p>SunSafe advice, resources and policies to support you, your family and community from skin disease </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+    
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-7">
+            <img src="{{ url_for('static', filename='img/image.png') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-5">
+            <h3>Visualization of data collected on people diagnosed with skin cancer vs age group</h3>
+            <ul>
+              <li><i class="bi bi-check"></i> Men are more prone to skin cancer than women.</li>
+              <li><i class="bi bi-check"></i> People have a higher risk of getting skin cancer in the age group of 65 to 75. </li>
+              <li><i class="bi bi-check"></i> Blue line indicates male and pink line inndicates female.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-7 order-1 order-md-2">
+            <img src="{{ url_for('static', filename='img/image (1).png') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-5 order-2 order-md-1"> 
+            <h3>Visualization of data collected on people diagnosed with skin cancer vs mortality</h3>
+            <ul>
+              <li><i class="bi bi-check"></i> High mortality is expected within age group of 70 to 80.</li>
+              <li><i class="bi bi-check"></i> This co relates with data of skin incidences.</li>
+              <li><i class="bi bi-check"></i> Male have a higher mortality raate.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-7">
+            <img src="{{ url_for('static', filename='img/image (2).png') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-5">
+            <h3>Visualization of data collected on people diagnosed with skin cancer vs state and sex </h3>
+            <ul>
+              <li><i class="bi bi-check"></i> Victorians have the highest risk of skin cancer.</li>
+              <li><i class="bi bi-check"></i> Men in Victoria have the highest risks.</li>
+              <li><i class="bi bi-check"></i> 1.5 million people in victoria are diagnose with skin cancer.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Frequently Asked Questions</span>
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Reducing skin cancer risk at school and early childhood?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    By teaching sensible sun protection habits from an early age and implementing sun protection measures, schools and early childhood services can play a significant role in reducing skin cancer risk.
+                    In Victoria, 97% of early childhood services and 90% of primary schools have a written sun protection policy, with research showing they have the greatest number of children and staff protecting themselves from the sun.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What is skin cancer?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Skin cancer is the uncontrolled growth of abnormal cells in the skin. 
+
+                    The three main types of skin cancer are basal cell carcinoma (BCC), squamous cell carcinoma (SCC) and melanoma. BCC and SCC are also called non-melanoma skin cancer or keratinocyte cancer, while they are more common than melanoma treatment for any type of skin cancer can be painful, leading to ongoing treatment requirements and life-long surveillance.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What causes skin cancer?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    More than 95% of skin cancers are caused by exposure to UV radiation.
+
+                    UV radiation most often comes from the sun, but it can also come from artificial sources, such as arc welders, glue curing lights for artificial nails, and solariums.
+                    
+                    Solariums are now banned for commercial use in Australia as research shows that people who use solariums have a much greater risk of developing skin cancer.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What is the UV Index?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    The World Health Organization's Global Solar UV Index measures UV levels on a scale from 0 (Low) to 11+ (Extreme).
+
+                    The UV level is affected by several factors including the time of day, time of year, cloud cover, altitude, location and surrounding surfaces.
+
+                    Most parts of Australia have high levels of UV radiation from the sun all year round. UV radiation cannot be seen or felt and is not related to temperature.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>SunSafe</span>
+          </a>
+          <p>SunSafe widget takes away the guesswork when it comes to knowing UV levels.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            108 Clayton<br>
+            Melbourne, VIC 3168<br>
+            Australia <br><br>
+            <strong>Phone:</strong> +61 400200211<br>
+            <strong>Email:</strong> info@analyzsolutions.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SunSafe</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+{% endblock %}
+
+
